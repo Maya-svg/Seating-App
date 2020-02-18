@@ -11,6 +11,15 @@ import Foundation
 class SeatingManager: ObservableObject {
     
     // @Published var table = {} //plublish the table dictionaries
+    @Published var stundentOne = ""
+    @Published var studentTwo = ""
+    @Published var studentThree = ""
+    @Published var studentFour = ""
+    @Published var studentFive = ""
+    @Published var studentSix = ""
+    @Published var studentSeven = ""
+    @Published var studentEight = ""
+    @Published var studentNine = ""
     
     struct SeatingData: Decodable {
         let name: String
@@ -53,8 +62,8 @@ class SeatingManager: ObservableObject {
             task.resume() //this starts the task
         }
     }
+    
     func parseJSON(tableData: Data){
         let decoder = JSONDecoder()
-        
     }
 }
