@@ -10,7 +10,7 @@ import Foundation
 
 class SeatingManager: ObservableObject {
     
-    // @Published var table = {} //plublish the table dictionaries
+    @Published var tableNumber = "1"
     @Published var stundentOne = ""
     @Published var studentTwo = ""
     @Published var studentThree = ""
